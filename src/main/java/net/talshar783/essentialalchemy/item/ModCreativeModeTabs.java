@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.talshar783.essentialalchemy.EssentialAlchemy;
+import net.talshar783.essentialalchemy.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.essentialalchemy_tab"))
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ESSENCEJAR.get());
+                        pOutput.accept(ModBlocks.ESSENCE_JAR.get());
                     })).build());
 
 

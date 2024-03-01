@@ -16,6 +16,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.talshar783.essentialalchemy.block.ModBlocks;
 import net.talshar783.essentialalchemy.item.ModCreativeModeTabs;
 import net.talshar783.essentialalchemy.item.ModItems;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class EssentialAlchemy
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
